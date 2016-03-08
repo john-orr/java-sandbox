@@ -17,5 +17,7 @@ public class Main {
         System.out.println(PlayPass.playPass("BORN IN 2015!", 1));
 
         System.out.println(MaxRotate.maxRot(6000200239l));
+
+        System.out.println("Rotation:" + CalculateRotation.shiftedDiff("isn't", "'tisn"));
     }
 }
