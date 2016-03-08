@@ -1,4 +1,4 @@
-package com.personaldev;
+package com.dev;
 
 /**
  * Created by john-orr on 04/03/16.
