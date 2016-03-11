@@ -35,6 +35,9 @@ public class Main {
         distTable1.put("X4", 300.0);
         Tour.tour(friends1, fTowns1, distTable1);
 
+        RomanNumeral.generate(1989);
+        RomanNumeral.generate(2474);
+
         Scramblies.scramble("scriptingjava", "javascript");
 
         Josephus.josephusPermutation(new ArrayList(Arrays.asList(new Object[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})), 2);
