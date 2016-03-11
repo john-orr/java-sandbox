@@ -33,5 +33,8 @@ public class Main {
         distTable1.put("X1", 100.0); distTable1.put("X2", 200.0); distTable1.put("X3", 250.0);
         distTable1.put("X4", 300.0);
         System.out.println(Tour.tour(friends1, fTowns1, distTable1));
+
+        System.out.println(RomanNumeral.generate(1989));
+        System.out.println(RomanNumeral.generate(2474));
     }
 }
