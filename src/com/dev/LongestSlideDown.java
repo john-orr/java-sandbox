@@ -14,7 +14,7 @@ public class LongestSlideDown {
             }
         }
         for (int[] level : pyramid) {
-            System.out.println(Arrays.toString(level));
+            //System.out.println(Arrays.toString(level));
         }
         return pyramid[0][0];
     }
