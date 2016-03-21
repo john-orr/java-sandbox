@@ -87,5 +87,10 @@ public class Main {
             }
             //System.out.println(message);
         }
+
+        int[][] spiral = TheClockwiseSpiral.createSpiral(4);
+        for (int[] row : spiral) {
+            System.out.println(Arrays.toString(row));
+        }
     }
 }
