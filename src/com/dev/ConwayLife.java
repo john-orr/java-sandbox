@@ -47,9 +47,9 @@ public class ConwayLife {
         int[][] trimmedGrid = new int[lastRowWithLife - firstRowWithLife + 1][lastColWithLife - firstColWithLife + 1];
         for (int row = firstRowWithLife, i = 0; row <= lastRowWithLife; row++, i++) {
             System.arraycopy(grid[row], firstColWithLife, trimmedGrid[i], 0, trimmedGrid[i].length);
-            System.out.println(Arrays.toString(trimmedGrid[i]));
+            //System.out.println(Arrays.toString(trimmedGrid[i]));
         }
-        System.out.println();
+        //System.out.println();
         return trimmedGrid;
     }
 

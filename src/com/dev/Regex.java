@@ -15,8 +15,8 @@ public class Regex {
         int count = 0;
         while (matcher.find()) {
             count++;
-            System.out.println(matcher.group());
+            //System.out.println(matcher.group());
         }
-        System.out.println("Found " + count + " match" + ((count == 1) ? "" : "es"));
+        //System.out.println("Found " + count + " match" + ((count == 1) ? "" : "es"));
     }
 }

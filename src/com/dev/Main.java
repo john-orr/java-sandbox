@@ -63,9 +63,29 @@ public class Main {
         LongestSlideDown.longestSlideDown(pyramid);
 
         int[][] initState = new int[][]{{1, 0, 0}, {0, 1, 1}, {1, 1, 0}};
-        int[][] result = ConwayLife.getGeneration(initState, 3);
-        for (int[] row : result) {
-            System.out.println(Arrays.toString(row));
+        int[][] generation = ConwayLife.getGeneration(initState, 3);
+        for (int[] row : generation) {
+            //System.out.println(Arrays.toString(row));
+        }
+
+        int[] numbers = new int[]{3, 1336, 1337, 11208, 11209, 11211, 7890, 43210, 78901, 32109};
+        for (int number : numbers) {
+            int isInteresting = CarMileage.isInteresting(number, new int[]{1337, 8008135});
+            String message;
+            switch (isInteresting) {
+                case 0:
+                    message = number + " is not interesting.";
+                    break;
+                case 1:
+                    message = number + " is almost an interesting number.";
+                    break;
+                case 2:
+                    message = number + " is interesting.";
+                    break;
+                default:
+                    message = "Invalid result";
+            }
+            //System.out.println(message);
         }
     }
 }
