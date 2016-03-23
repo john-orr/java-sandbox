@@ -1,12 +1,18 @@
 package com.dev;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Regex.commitMessageChecks("a into b. b into c.");
+        Pattern commitMessageRegex = Pattern.compile("\\w into \\w\\.");
+        Matcher matcher = commitMessageRegex.matcher("a into b. b into c.");
+        while (matcher.find()) {
+            //System.out.println(matcher.group());
+        }
 
         Kata.evaporator(10, 10, 10);
 
@@ -90,6 +96,12 @@ public class Main {
         //print2DArray(spiral);
 
         //System.out.println(HumanReadableTime.makeReadable(86399));
+
+        Pattern mod4Regex = Pattern.compile("\\[[+-]?([048]|\\d*([02468][048]|[13579][26]))\\]");
+        List<String> testStrings = Arrays.asList("No, [2014] isn't a multiple of 4...", "[+05620]", "[~24]", "[0]");
+        for (String testString : testStrings) {
+            //System.out.println(mod4Regex.matcher(testString).find());
+        }
     }
 
     private static void print2DArray(int[][] _2DArray) {
