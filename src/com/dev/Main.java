@@ -64,9 +64,7 @@ public class Main {
 
         int[][] initState = new int[][]{{1, 0, 0}, {0, 1, 1}, {1, 1, 0}};
         int[][] generation = ConwayLife.getGeneration(initState, 3);
-        for (int[] row : generation) {
-            //System.out.println(Arrays.toString(row));
-        }
+        //print2DArray(generation);
 
         int[] numbers = new int[]{3, 1336, 1337, 11208, 11209, 11211, 7890, 43210, 78901, 32109};
         for (int number : numbers) {
@@ -89,7 +87,13 @@ public class Main {
         }
 
         int[][] spiral = TheClockwiseSpiral.createSpiral(4);
-        for (int[] row : spiral) {
+        //print2DArray(spiral);
+
+        //System.out.println(HumanReadableTime.makeReadable(86399));
+    }
+
+    private static void print2DArray(int[][] _2DArray) {
+        for (int[] row : _2DArray) {
             System.out.println(Arrays.toString(row));
         }
     }
