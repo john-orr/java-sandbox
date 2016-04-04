@@ -6,10 +6,6 @@ package com.dev;
 public class FindOutlier {
 
     static int find(int[] integers) {
-        for (int i : integers) {
-            System.out.print(i + ", ");
-        }
-        System.out.println();
         int oddNumbers = 0;
         int evenNumbers = 0;
         int iterator = 0;
