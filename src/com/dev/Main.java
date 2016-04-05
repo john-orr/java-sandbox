@@ -14,8 +14,8 @@ public class Main {
 
         FindOutlier.find(new int[]{2, 6, 8, 10, 3, 2, 6, 8, 200, 700, 1, 84, 10, 4, 17, 6, 8, 10, 6, 12, 24, 36});
 
-        Pattern commitMessageRegex = Pattern.compile("\\w into \\w\\.");
-        Matcher matcher = commitMessageRegex.matcher("a into b. b into c.");
+        Pattern commitMessageRegex = Pattern.compile("\\w+ into \\w+\\.");
+        Matcher matcher = commitMessageRegex.matcher("ab into bc. bc into cd.");
         while (matcher.find()) {
             //System.out.println(matcher.group());
         }
