@@ -8,9 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(NthSeries.seriesSum(3));
+        Arrays.toString(Xbonacci.xbonacci(new double[]{1, 2, 3}, 10));
 
-        System.out.println(FindOutlier.find(new int[]{2, 6, 8, 10, 3, 2, 6, 8, 200, 700, 1, 84, 10, 4, 17, 6, 8, 10, 6, 12, 24, 36}));
+        NthSeries.seriesSum(3);
+
+        FindOutlier.find(new int[]{2, 6, 8, 10, 3, 2, 6, 8, 200, 700, 1, 84, 10, 4, 17, 6, 8, 10, 6, 12, 24, 36});
 
         Pattern commitMessageRegex = Pattern.compile("\\w into \\w\\.");
         Matcher matcher = commitMessageRegex.matcher("a into b. b into c.");
