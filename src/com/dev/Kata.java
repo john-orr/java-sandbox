@@ -42,9 +42,4 @@ public class Kata {
         return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
                 c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
     }
-
-    public static boolean isValid(String idn) {
-        String pattern = "^[a-zA-z_$][a-zA-Z0-9_$]*";
-        return idn.matches(pattern);
-    }
 }

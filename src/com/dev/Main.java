@@ -8,6 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println(RegExp.ghostBusters("BusStation"));
+
         Arrays.toString(Xbonacci.xbonacci(new double[]{1, 2, 3}, 10));
 
         NthSeries.seriesSum(3);
@@ -25,7 +27,7 @@ public class Main {
         Kata.replaceVowels("johnorr123@gmail.cOm");
         Kata.vowel2Index("johnorr123@gmail.cOm");
 
-        Kata.isValid("1j");
+        RegExp.isValid("1j");
 
         PlayPass.playPass("zZ BORN IN 1992!", 5);
         PlayPass.playPass("BORN IN 2015!", 1);
