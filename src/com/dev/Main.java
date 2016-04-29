@@ -8,7 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(RegExp.ghostBusters("BusStation"));
+        System.out.println(WeightSort.orderWeight("103 123 4444 99 2000"));
+
+        RegExp.ghostBusters("BusStation");
 
         Arrays.toString(Xbonacci.xbonacci(new double[]{1, 2, 3}, 10));
 
