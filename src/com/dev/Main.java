@@ -8,7 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(WeightSort.orderWeight("103 123 4444 99 2000"));
+        System.out.println(GoldenRatioCalculator.calculate(0.0000000001));
+
+        WeightSort.orderWeight("103 123 4444 99 2000");
 
         RegExp.ghostBusters("BusStation");
 
