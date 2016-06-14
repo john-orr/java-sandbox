@@ -8,7 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(GoldenRatioCalculator.calculate(0.0000000001));
+        /*GoldenRatioCalculator.calculate(0.0000000001);
+        
+        FileEditor.addVOBB("appointments", "appointments_edited");
 
         WeightSort.orderWeight("103 123 4444 99 2000");
 
@@ -113,7 +115,7 @@ public class Main {
         List<String> testStrings = Arrays.asList("No, [2014] isn't a multiple of 4...", "[+05620]", "[~24]", "[0]");
         for (String testString : testStrings) {
             //System.out.println(mod4Regex.matcher(testString).find());
-        }
+        }*/
     }
 
     private static void print2DArray(int[][] _2DArray) {
