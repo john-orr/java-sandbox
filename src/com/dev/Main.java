@@ -36,7 +36,7 @@ public class Main {
         PlayPass.playPass("zZ BORN IN 1992!", 5);
         PlayPass.playPass("BORN IN 2015!", 1);
 
-        MaxRotate.maxRot(6000200239l);
+        MaxRotate.maxRot(6000200239L);
 
         CalculateRotation.shiftedDiff("isn't", "'tisn");
 
