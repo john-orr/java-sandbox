@@ -8,6 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        InvertLetterCase.invert("jO3hN2oRr");
+
         /*GoldenRatioCalculator.calculate(0.0000000001);
         
         FileEditor.addVOBB("appointments", "appointments_edited");
