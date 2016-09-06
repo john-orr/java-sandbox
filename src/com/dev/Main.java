@@ -8,9 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        InvertLetterCase.invert("jO3hN2oRr");
+        System.out.println(Arrays.asList(RegExp.getPasswordPositions("Enter the 10th, 11th and 12th characters of your Password in the appropriate boxesEnter the 10th, 11th and 12th characters of your Password in the appropriate boxes")));
 
-        /*GoldenRatioCalculator.calculate(0.0000000001);
+        /*InvertLetterCase.invert("jO3hN2oRr");
+
+        GoldenRatioCalculator.calculate(0.0000000001);
         
         FileEditor.addVOBB("appointments", "appointments_edited");
 

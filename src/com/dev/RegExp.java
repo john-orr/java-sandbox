@@ -75,4 +75,12 @@ public class RegExp {
         }
         return -1;
     }
+
+    public static int[] getPasswordPositions(String instructions) {
+        Matcher matcher = Pattern.compile(".*(\\d{1,2}).*(\\d{1,2}).*(\\d{1,2}).*").matcher(instructions);
+        if (matcher.find()) {
+            matcher.group();
+        }
+        return null;
+    }
 }
