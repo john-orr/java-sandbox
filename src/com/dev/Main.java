@@ -8,7 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(Arrays.asList(RegExp.getPasswordPositions("Enter the 10th, 11th and 12th characters of your Password in the appropriate boxesEnter the 10th, 11th and 12th characters of your Password in the appropriate boxes")));
+        System.out.println(Arrays.toString(RegExp.getPasswordPositions(
+                "Enter the 10th, 11th and 12th characters of your Password in the appropriate boxes")));
+        System.out.println(Arrays.toString(RegExp.getPasswordPositions(
+                "Enter the 2nd, 5th and 6th characters of your Password in the appropriate boxes")));
 
         /*InvertLetterCase.invert("jO3hN2oRr");
 
