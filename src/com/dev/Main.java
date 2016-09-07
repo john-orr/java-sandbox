@@ -13,7 +13,7 @@ public class Main {
         System.out.println(Arrays.toString(RegExp.getPasswordPositions(
                 "Enter the 2nd, 5th and 6th characters of your Password in the appropriate boxes")));
 
-        /*InvertLetterCase.invert("jO3hN2oRr");
+        /*spInvertLetterCase.invert("jO3hN2oRr");
 
         GoldenRatioCalculator.calculate(0.0000000001);
         

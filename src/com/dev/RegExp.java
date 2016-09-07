@@ -77,7 +77,7 @@ public class RegExp {
     }
 
     public static int[] getPasswordPositions(String instructions) {
-        Matcher matcher = Pattern.compile("(\\d{1,2}).+?(\\d{1,2}).+?(\\d{1,2})").matcher(instructions);
+        Matcher matcher = Pattern.compile("(\\d+).+?(\\d+).+?(\\d+)").matcher(instructions);
         int[] positions = new int[3];
         if (matcher.find()) {
             positions[0] = Integer.valueOf(matcher.group(1));
