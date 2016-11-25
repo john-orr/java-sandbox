@@ -1,5 +1,7 @@
 package com.dev;
 
+import com.dev.coins.CoinCombinationsCalculator;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -8,12 +10,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(Arrays.toString(RegExp.getPasswordPositions(
-                "Enter the 10th, 11th and 12th characters of your Password in the appropriate boxes")));
-        System.out.println(Arrays.toString(RegExp.getPasswordPositions(
-                "Enter the 2nd, 5th and 6th characters of your Password in the appropriate boxes")));
+        System.out.println(CoinCombinationsCalculator.calculate(1728, 4));
 
-        /*spInvertLetterCase.invert("jO3hN2oRr");
+        /*Arrays.toString(RegExp.getPasswordPositions(
+                "Enter the 10th, 11th and 12th characters of your Password in the appropriate boxes"));
+        Arrays.toString(RegExp.getPasswordPositions(
+                "Enter the 2nd, 5th and 6th characters of your Password in the appropriate boxes"));
+
+        InvertLetterCase.invert("jO3hN2oRr");
 
         GoldenRatioCalculator.calculate(0.0000000001);
         
