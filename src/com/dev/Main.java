@@ -10,9 +10,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(CoinCombinationsCalculator.calculate(1728, 4));
+        RegExp.characterControl();
 
-        /*Arrays.toString(RegExp.getPasswordPositions(
+        /*RegExp.lookAheadBehind();
+
+        CoinCombinationsCalculator.calculate(1728, 4);
+
+        Arrays.toString(RegExp.getPasswordPositions(
                 "Enter the 10th, 11th and 12th characters of your Password in the appropriate boxes"));
         Arrays.toString(RegExp.getPasswordPositions(
                 "Enter the 2nd, 5th and 6th characters of your Password in the appropriate boxes"));

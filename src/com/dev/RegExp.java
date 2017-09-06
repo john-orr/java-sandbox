@@ -8,6 +8,18 @@ import java.util.regex.Pattern;
  */
 public class RegExp {
 
+    public static void characterControl() {
+        String surname = "Ab., {[/-'U…ÿ";
+        surname = surname.replaceAll("[^\\w' -]", "");
+        System.out.println(surname);
+    }
+
+    public static void lookAheadBehind() {
+        Pattern wordBoundary = Pattern.compile("(?<!f)log");
+        System.out.println(wordBoundary.matcher("log").find());
+        System.out.println(wordBoundary.matcher("flog").find());
+    }
+
     public static boolean isHexNumber(String s) {
         return s.matches("(0[xX])?[a-fA-F\\d]+");
     }
